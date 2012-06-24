@@ -107,6 +107,10 @@ public class GUIActionHandler extends MultiListener {
 			break;
 		case "prayer_altarID":
 			con.prayer_altarID = w.getSpinnerValue();
+			break;
+		case "cagedSupport_enable":
+			con.cagedSupport_enable = w.isSelected();
+			break;
 		}
 	}
 

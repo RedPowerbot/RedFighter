@@ -282,6 +282,10 @@ public class RFGui extends JFrame {
 	private Divider divider_12;
 	private JTextArea unlessYouSelect;
 	private JTextArea pleaseAddClues;
+	private JPanel panel_27;
+	private JCheckBox cagedSupport_enable;
+	private Divider divider_13;
+	private JTextArea pleaseBeCareful;
 	public RFGui() {
 		this(new Configuration(new RedFighter()));
 
@@ -665,6 +669,33 @@ public class RFGui extends JFrame {
 		slayerTaskComboBox.setName("slayer_task");
 		slayerTaskComboBox.setBounds(191, 78, 263, 21);
 		panel_23.add(slayerTaskComboBox);
+		
+		panel_27 = new JPanel();
+		panel_27.setBackground(Color.BLACK);
+		tabbedPane_1.addTab("Cage", null, panel_27, null);
+		panel_27.setLayout(null);
+		
+		cagedSupport_enable = new JCheckBox("Enable Caged NPC Support");
+		cagedSupport_enable.addActionListener(actionListener);
+		cagedSupport_enable.setName("cagedSupport_enable");
+		cagedSupport_enable.setForeground(Color.WHITE);
+		cagedSupport_enable.setOpaque(false);
+		cagedSupport_enable.setBounds(6, 7, 448, 41);
+		panel_27.add(cagedSupport_enable);
+		
+		divider_13 = new Divider();
+		divider_13.setBounds(6, 61, 444, 18);
+		panel_27.add(divider_13);
+		
+		pleaseBeCareful = new JTextArea();
+		pleaseBeCareful.setForeground(Color.WHITE);
+		pleaseBeCareful.setOpaque(false);
+		pleaseBeCareful.setFont(new Font("Times New Roman", Font.PLAIN, 12));
+		pleaseBeCareful.setLineWrap(true);
+		pleaseBeCareful.setWrapStyleWord(true);
+		pleaseBeCareful.setText("Please be careful with this feature, and read below to learn about it's use.\r\n\r\nEnabling this option will enable the script to attack monster's who are in a bounded area, not reachable by the player. Normally, if a NPC was in a (Ex.) cage, the script would not attack the monster, because the player couldn't \"reach\" the monster in the since of actually coming into contact. ");
+		pleaseBeCareful.setBounds(10, 90, 444, 146);
+		panel_27.add(pleaseBeCareful);
 		panel_2.setFocusTraversalPolicy(new FocusTraversalOnArray(
 				new Component[] { tabbedPane_1, panel_6 }));
 

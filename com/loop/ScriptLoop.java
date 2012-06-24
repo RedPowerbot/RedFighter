@@ -1,5 +1,6 @@
 package com.loop;
 
+import java.awt.Graphics;
 import java.util.logging.Logger;
 
 import org.powerbot.concurrent.Task;
@@ -14,10 +15,11 @@ import org.powerbot.game.api.util.Time;
 import org.powerbot.game.api.wrappers.Tile;
 import org.powerbot.game.api.wrappers.interactive.Player;
 import org.powerbot.game.api.wrappers.node.Item;
+import org.powerbot.game.bot.event.listener.PaintListener;
 
 import com.data.Configuration;
 
-public abstract class ScriptLoop implements Task, Condition {
+public abstract class ScriptLoop extends Strategy implements Task, Condition, PaintListener {
 
 	protected Configuration con;
 	private Logger log;
@@ -40,6 +42,13 @@ public abstract class ScriptLoop implements Task, Condition {
 		if (parent != null) {
 			this.log = parent.log;
 		}
+		setLock(true);
+		setSync(true);
+	}
+	
+	@Override
+	public void onRepaint(Graphics render) {
+		
 	}
 	
 	public int[] getInventoryIds() {

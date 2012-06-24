@@ -24,4 +24,6 @@ public interface Antiban {
 	 */
 	public boolean kill();
 
+	public boolean isAlive();
+	
 }

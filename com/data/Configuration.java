@@ -57,6 +57,13 @@ public class Configuration {
 	public PaintTab paintTab = PaintTab.MAIN;
 	public SkillDialog skillDialog;
 
+	public boolean paint_tiles = true;
+	public boolean paint_npcs = true;
+	public boolean paint_objects = true;
+	public boolean paint_items = true;
+	public boolean paint_groundItems = true;
+	public boolean paint_mouse = true;
+	
 	/**
 	 * Fighting
 	 */
@@ -68,6 +75,7 @@ public class Configuration {
 	public int attackBusyMobs_maxPlayerAmount = 3;
 	public boolean range_pickupAmmo = false;
 	public boolean range_equipAmmo = false;
+	public boolean cagedSupport_enable = false;
 
 	/**
 	 * Slayer

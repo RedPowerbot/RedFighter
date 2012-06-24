@@ -141,6 +141,9 @@ public class GuiIntiater {
 		case "prayer_altarID":
 			w.setSpinnerValue(con.prayer_altarID);
 			break;
+		case "cagedSupport_enable":
+			w.setSelected(con.cagedSupport_enable);
+			break;	
 		}
 	}
 

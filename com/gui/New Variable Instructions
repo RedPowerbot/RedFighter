@@ -1,0 +1,20 @@
+Instructions
+//------------------------------------//
+//-----------------------------------//
+1) Add variable to 'Configuration'
+2) Create component in RFGui
+3) Set the name of the component to the name of the relative variable
+4) Add the MultiListener 'RFGui.actionListener' to the component.
+4) Add support to 'GUIActionHandler' and 'GuiInitiater'
+
+//------Notes-----//
+
+
+
+//-----Known Issues of Instructions-----//
+Most common problems occurred when a typo occurred in the 'String-based" switch loops.
+	If such problems do occur, a System.out printout should occur during the loading, and
+	changing of a valid component setting change (Ex. Checkbox being (un)selected).
+Another issue that frequently happened, was in WindowBuilder, setting the "name" of the 
+	component meant the variable's name of the component, rather then setting the "name setting"
+	of the component.

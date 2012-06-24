@@ -29,6 +29,10 @@ public class RFPainterV1 {
 		tool.setStartTime(con.startTime);
 		paintHandler = new ButtonHandler(con);
 	}
+	
+	public ButtonHandler getButtonHandler() {
+		return paintHandler;
+	}
 
 	public void render(Graphics render) {
 		Graphics2D g = (Graphics2D) render;

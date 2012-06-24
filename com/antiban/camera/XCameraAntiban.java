@@ -26,4 +26,11 @@ public class XCameraAntiban extends TimedAntiban implements Antiban {
 		maximumAngleRotation = p.Int("MaximumAngleRotation");
 	}
 
+	@Override
+	public void run() {
+		while (isAlive()) {
+			
+		}
+	}
+
 }
