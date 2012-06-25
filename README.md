@@ -1,4 +1,7 @@
+CLICK RAW TO SEE FORMATED VERSION
+
 RedFighter
+/**
 ==========
 
 RedFighter by RedDevil for RSBot
@@ -37,7 +40,7 @@ Tasks
 		I feel like it's a huge feature that hasn't had enough time spent on it}
 	
 	
-	
+**/	
 	
 	
 	
